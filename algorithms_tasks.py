@@ -45,6 +45,7 @@ def to_weird_case(string: str) -> str:
             newString.append((string[i].lower()))
     print(''.join(newString))
 
+
 to_weird_case('String')
 to_weird_case('Algorithms and data structures')
 
