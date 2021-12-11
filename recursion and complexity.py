@@ -67,14 +67,27 @@ def loop():
 
 
 #O(cn)
-def fibonacci(n):
+def fibonacci_rec(n):
     if n == 1:
         return 1
     elif n == 2:
         return 1
     elif n > 2:
-        return fibonacci(n-1) + fibonacci(n-2)
+        return fibonacci_rec(n-1) + fibonacci_rec(n-2)
 
 
-for n in range(1, 20):
-    print(n, ": ", fibonacci(n))
+def fibonacci_iter(n):
+    a = range(n)
+    b = []
+    for i in a:
+        if i == a[0]:
+            b.append(0)
+        elif i == a[1]:
+            b.append(1)
+        else:
+            b.append(b[i-1] + b[i-2])
+    return b[-1]
+
+
+for n in range(1, 99):
+    print(n, ": ", fibonacci_iter(n))
