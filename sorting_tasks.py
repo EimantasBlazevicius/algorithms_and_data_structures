@@ -67,7 +67,7 @@ quick_sort_results = get_times(lists_to_test, quick_sort)
 bubble_sort_results = get_times(lists_to_test, bubble)
 heap_sort_results = get_times(lists_to_test, heapsort)
 
-X = [103, 152,551,666, 999, 9999]
+X = [103, 152, 551, 666, 999, 9999]
 Ya = quick_sort_results
 Yb = bubble_sort_results
 Yc = heap_sort_results
