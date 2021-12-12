@@ -79,6 +79,7 @@ def fibonacci_rec(n):
 def fibonacci_iter(n):
     a = range(n)
     b = []
+
     for i in a:
         if i == a[0]:
             b.append(0)
