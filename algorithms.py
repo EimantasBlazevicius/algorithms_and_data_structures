@@ -15,6 +15,8 @@ def password_entering():
 
 
 def decimal_to_binary(d):
+    if d <= 0:
+        return
     binary_string = ''
     while d != 0:
         r = d % 2
@@ -24,6 +26,7 @@ def decimal_to_binary(d):
             binary_string = '0' + binary_string
         d = int(d) / 2
     return binary_string
+
 
 print(decimal_to_binary(18))
 
